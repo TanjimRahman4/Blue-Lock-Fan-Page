@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Hero Section */
+#hero {
+    background: url("images/blue-lock-bg.jpg") center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: #00ccff;
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    color: #ffffff;
+}
+
+#h2 {
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+}
+
+label {
+    color: #ffffff;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Characters Section */
+#team {
+    padding: 4rem 2rem;
+    background: #0d0d0d;
+    text-align: center;
+}
+
+.character-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.character-card {
+    background: #1a1a1a;
+    border: 2px solid #00ccff;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.character-card h3 {
+    margin-top: 1rem;
+    color: #00ccff;
+}
+
+/* Media Section */
+#media {
+    background: #000;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.trailer iframe {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 2px solid #00ccff;
+    border-radius: 12px;
+}
+
+/* Contact Section */
+#contact {
+    background: #0d0d0d;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    background: #1a1a1a;
+    border: 1px solid #00ccff;
+    color: white;
+    border-radius: 8px;
+}
+
+#button {
+    background: #00ccff;
+    color: #000;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#button:hover {
+    background: #009ecc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0a0a0a;
+    font-size: 0.9rem;
+    color: #777;
+}
+/* Character images sizing */
+#rin,
+#nagi,
+#isagi {
+    height: 200px;
+    width: 200px;
+    }
